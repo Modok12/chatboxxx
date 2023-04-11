@@ -6,10 +6,10 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import streamlit as st
 
-# Download required NLTK data
-# nltk.download('stopwords')
-# nltk.download('punkt')
-# nltk.download('wordnet')
+ #Download required NLTK data
+nltk.download('stopwords')
+nltk.download('punkt')
+nltk.download('wordnet')
 
 with open('Dataset\chatbot dataset.txt', 'r', encoding='utf8', errors='ignore') as file:
     dataset = file.read()
